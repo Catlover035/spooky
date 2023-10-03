@@ -24,3 +24,4 @@ assets.animation`Bob l`,
 200,
 false
 )
+Bob.follow(Skid, 80)

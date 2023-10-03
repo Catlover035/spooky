@@ -2,7 +2,8 @@
     "name": "spooky",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "darts": "*"
     },
     "files": [
         "main.blocks",
