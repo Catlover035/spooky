@@ -16,12 +16,12 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Follower, function (sprite, other
     game.showLongText("PUUMP NOO", DialogLayout.Top)
 })
 sprites.onDestroyed(SpriteKind.Enemy, function (sprite) {
-    pause(100)
     game.setGameOverMessage(true, "It’s Spooky Month!")
     game.gameOver(true)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(Bob, effects.spray, 1000)
+    pause(1000)
 })
 let Candy: Dart = null
 let Bob: Sprite = null
